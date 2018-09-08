@@ -94,7 +94,7 @@ public class camSwitcher : MonoBehaviour
 			currentCamera = backCamera;
 			
 			//////////////////// code for back Camera
-			backCamera.fieldOfView = backCamera.fieldOfView + outsideControls.Vertical * 20f * Time.deltaTime;
+			backCamera.fieldOfView = backCamera.fieldOfView + outsideControls.GetPlayerController(1).Vertical * 20f * Time.deltaTime;
 			if (backCamera.fieldOfView > 85) {
 				backCamera.fieldOfView = 85;
 			}

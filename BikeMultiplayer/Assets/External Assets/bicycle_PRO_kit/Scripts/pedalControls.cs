@@ -30,11 +30,13 @@ public class pedalControls : MonoBehaviour
 
     //tmp "true" during "in stunt" 
     private bool inStunt = false;
+
+    public int playerIndex;
     void Start()
     {
 
         ctrlHub = GameObject.Find("gameScenario");//link to GameObject with script "controlHub"
-        outsideControls = ctrlHub.GetComponent<controlHub>();//to connect c# mobile control script to this one
+        outsideControls= ctrlHub.GetComponent<controlHub>();//to connect c# mobile control script to this one
 
         linkToBike = GameObject.Find("rigid_bike").GetComponent<bicycle_code>();
         linkToRider = GameObject.Find("char_anim").GetComponent<biker_logic_mecanim>();
@@ -79,7 +81,7 @@ public class pedalControls : MonoBehaviour
     void FixedUpdate()
     {
         //pedals rotation part
-        if (outsideControls.Vertical > 0)
+        if (outsideControls.GetPlayerController(playerIndex).Vertical > 0)
         {
             this.transform.rotation = this.transform.rotation * Quaternion.Euler(linkToBike.bikeSpeed / 4, 0, 0);
             pedalRight.transform.rotation = pedalRight.transform.rotation * Quaternion.Euler(-linkToBike.bikeSpeed / -4, 0, 0);
@@ -105,7 +107,7 @@ public class pedalControls : MonoBehaviour
 
         //movement body of rider's pelvis when cornering(sometimes looks strange on bicycles with high seat. So, you might just disable it when needed)
         var tmpRidPlvs02 = veloMan.transform.localPosition;
-        tmpRidPlvs02.x = outsideControls.Horizontal / 10;
+        tmpRidPlvs02.x = outsideControls.GetPlayerController(playerIndex).Horizontal / 10;
         veloMan.transform.localPosition = tmpRidPlvs02;
 
 

@@ -82,7 +82,12 @@ public class bicycle_code : MonoBehaviour
     [HideInInspector]
     public float bikeSpeed; //to know bike speed km/h
     public bool isReverseOn = false; //to turn On and Off reverse speed
+    
+    public int playerIndex = 0;
+    
     ////////////////////////////////////////////////  ON SCREEN INFO ///////////////////////////////////////////////////////
+
+#if UNITY_EDITOR
     void OnGUI()
     {
         GUIStyle biggerText = new GUIStyle("label");
@@ -129,7 +134,10 @@ public class bicycle_code : MonoBehaviour
         GUI.color = Color.black;
 
 
-    }
+    } 
+#endif
+
+
     void Start()
     {
 
@@ -148,6 +156,7 @@ public class bicycle_code : MonoBehaviour
 
         pedals = GameObject.Find("bicycle_pedals");
         linkToStunt = pedals.GetComponent<pedalControls>();
+        linkToStunt.playerIndex = playerIndex;
 
         Vector3 setInitialTensor = GetComponent<Rigidbody>().inertiaTensor;//this string is necessary for Unity 5.3f with new PhysX feature when Tensor decoupled from center of mass
         GetComponent<Rigidbody>().centerOfMass = new Vector3(CoM.localPosition.x, CoM.localPosition.y, CoM.localPosition.z);// now Center of Mass(CoM) is alligned to GameObject "CoM"
@@ -231,10 +240,10 @@ public class bicycle_code : MonoBehaviour
 
         //////////////////////////////////// acceleration & brake /////////////////////////////////////////////////////////////
         //////////////////////////////////// ACCELERATE /////////////////////////////////////////////////////////////
-        if (!crashed && outsideControls.Vertical > 0 && !isReverseOn)
+        if (!crashed && outsideControls.GetPlayerController(playerIndex).Vertical > 0 && !isReverseOn)
         {//case with acceleration from 0.0f to 0.9f throttle
             coll_frontWheel.brakeTorque = 0;//we need that to fix strange unity bug when bike stucks if you press "accelerate" just after "brake".
-            coll_rearWheel.motorTorque = LegsPower * outsideControls.Vertical;
+            coll_rearWheel.motorTorque = LegsPower * outsideControls.GetPlayerController(playerIndex).Vertical;
 
             // debug - rear wheel is green when accelerate
             meshRearWheel.GetComponent<Renderer>().material.color = Color.green;
@@ -247,9 +256,9 @@ public class bicycle_code : MonoBehaviour
             GetComponent<Rigidbody>().centerOfMass = new Vector3(CoM.localPosition.x, CoM.localPosition.y, CoM.localPosition.z);
         }
         //case for reverse
-        if (!crashed && outsideControls.Vertical > 0 && isReverseOn)
+        if (!crashed && outsideControls.GetPlayerController(playerIndex).Vertical > 0 && isReverseOn)
         {
-            coll_rearWheel.motorTorque = LegsPower * -outsideControls.Vertical / 2 + (bikeSpeed * 50);//need to make reverse really slow
+            coll_rearWheel.motorTorque = LegsPower * -outsideControls.GetPlayerController(playerIndex).Vertical / 2 + (bikeSpeed * 50);//need to make reverse really slow
 
             // debug - rear wheel is green when accelerate
             meshRearWheel.GetComponent<Renderer>().material.color = Color.green;
@@ -263,7 +272,7 @@ public class bicycle_code : MonoBehaviour
         }
 
         //////////////////////////////////// ACCELERATE 'full throttle - manual' ///////////////////////////////////////////////////////
-        if (!crashed && outsideControls.Vertical > 0.9f && !isReverseOn)// acceleration >0.9f throttle for wheelie	
+        if (!crashed && outsideControls.GetPlayerController(playerIndex).Vertical > 0.9f && !isReverseOn)// acceleration >0.9f throttle for wheelie	
         {
             coll_frontWheel.brakeTorque = 0;//we need that to fix strange unity bug when bike stucks if you press "accelerate" just after "brake".
             coll_rearWheel.motorTorque = LegsPower * 1.2f;//1.2f mean it's full throttle
@@ -317,10 +326,10 @@ public class bicycle_code : MonoBehaviour
         //////////////////////////////////// BRAKING /////////////////////////////////////////////////////////////
         //////////////////////////////////// front brake /////////////////////////////////////////////////////////
         int springWeakness = 0;
-        if (!crashed && outsideControls.Vertical < 0 && !isFrontWheelInAir)
+        if (!crashed && outsideControls.GetPlayerController(playerIndex).Vertical < 0 && !isFrontWheelInAir)
         {
 
-            coll_frontWheel.brakeTorque = frontBrakePower * -outsideControls.Vertical;
+            coll_frontWheel.brakeTorque = frontBrakePower * -outsideControls.GetPlayerController(playerIndex).Vertical;
             coll_rearWheel.motorTorque = 0; // you can't do accelerate and braking same time.
 
             //more user firendly gomeotric progession braking. But less stoppie and fun :( Boring...
@@ -330,7 +339,7 @@ public class bicycle_code : MonoBehaviour
 
                 //when rear brake is used it helps a little to prevent stoppie. Because in real life bike "stretch" a little when you using rear brake just moment before front.
                 float rearBrakeAddon = 0.0f;
-                if (outsideControls.rearBrakeOn)
+                if (outsideControls.GetPlayerController(playerIndex).rearBrakeOn)
                 {
                     rearBrakeAddon = 0.0025f;
                 }
@@ -385,7 +394,7 @@ public class bicycle_code : MonoBehaviour
 
         //////////////////////////////////// rear brake /////////////////////////////////////////////////////////
         // rear brake - it's all about lose side stiffness more and more till rear brake is pressed
-        if (!crashed && outsideControls.rearBrakeOn)
+        if (!crashed && outsideControls.GetPlayerController(playerIndex).rearBrakeOn)
         {
             coll_rearWheel.brakeTorque = frontBrakePower / 2;// rear brake is not so good as front brake
 
@@ -445,9 +454,9 @@ public class bicycle_code : MonoBehaviour
 
 
         //////////////////////////////////// reverse /////////////////////////////////////////////////////////
-        if (!crashed && outsideControls.reverse && bikeSpeed <= 0)
+        if (!crashed && outsideControls.GetPlayerController(playerIndex).reverse && bikeSpeed <= 0)
         {
-            outsideControls.reverse = false;
+            //outsideControls.GetPlayerController(playerIndex).reverse = false;
             if (isReverseOn == false)
             {
                 isReverseOn = true;
@@ -464,11 +473,11 @@ public class bicycle_code : MonoBehaviour
         //(honestly, there was a time when MotoGP bikes has restricted wheel bar rotation angle by 1.5f degree ! as we got here :)			
         tempMaxWheelAngle = wheelbarRestrictCurve.Evaluate(bikeSpeed);//associate speed with curve which you've tuned in Editor
 
-        if (!crashed && outsideControls.Horizontal != 0)
+        if (!crashed && outsideControls.GetPlayerController(playerIndex).Horizontal != 0)
         {
 
             // while speed is high, wheelbar is restricted 
-            coll_frontWheel.steerAngle = tempMaxWheelAngle * outsideControls.Horizontal;
+            coll_frontWheel.steerAngle = tempMaxWheelAngle * outsideControls.GetPlayerController(playerIndex).Horizontal;
             steeringWheel.rotation = coll_frontWheel.transform.rotation * Quaternion.Euler(0, coll_frontWheel.steerAngle, coll_frontWheel.transform.rotation.z);
         }
         else coll_frontWheel.steerAngle = 0;
@@ -477,37 +486,37 @@ public class bicycle_code : MonoBehaviour
         /////////////////////////////////////////////////// PILOT'S MASS //////////////////////////////////////////////////////////
         // it's part about moving of pilot's center of mass. It can be used for wheelie or stoppie control and for motocross section in future
         //not polished yet. For mobile version it should back pilot's mass smooth not in one tick
-        if (outsideControls.VerticalMassShift > 0)
+        if (outsideControls.GetPlayerController(playerIndex).VerticalMassShift > 0)
         {
-            tmpMassShift = outsideControls.VerticalMassShift / 12.5f;//12.5f to get 0.08fm at final
+            tmpMassShift = outsideControls.GetPlayerController(playerIndex).VerticalMassShift / 12.5f;//12.5f to get 0.08fm at final
             var tmp_cs19 = CoM.localPosition;
             tmp_cs19.z = tmpMassShift;
             CoM.localPosition = tmp_cs19;
 
             GetComponent<Rigidbody>().centerOfMass = new Vector3(CoM.localPosition.x, CoM.localPosition.y, CoM.localPosition.z);
         }
-        if (outsideControls.VerticalMassShift < 0)
+        if (outsideControls.GetPlayerController(playerIndex).VerticalMassShift < 0)
         {
-            tmpMassShift = outsideControls.VerticalMassShift / 12.5f;//12.5f to get 0.08fm at final
+            tmpMassShift = outsideControls.GetPlayerController(playerIndex).VerticalMassShift / 12.5f;//12.5f to get 0.08fm at final
             var tmp_cs20 = CoM.localPosition;
             tmp_cs20.z = tmpMassShift;
             CoM.localPosition = tmp_cs20;
 
             GetComponent<Rigidbody>().centerOfMass = new Vector3(CoM.localPosition.x, CoM.localPosition.y, CoM.localPosition.z);
         }
-        if (outsideControls.HorizontalMassShift < 0)
+        if (outsideControls.GetPlayerController(playerIndex).HorizontalMassShift < 0)
         {
             var tmp_cs21 = CoM.localPosition;
-            tmp_cs21.x = outsideControls.HorizontalMassShift / 40;
+            tmp_cs21.x = outsideControls.GetPlayerController(playerIndex).HorizontalMassShift / 40;
             CoM.localPosition = tmp_cs21;//40 to get 0.025m at final
 
             GetComponent<Rigidbody>().centerOfMass = new Vector3(CoM.localPosition.x, CoM.localPosition.y, CoM.localPosition.z);
 
         }
-        if (outsideControls.HorizontalMassShift > 0)
+        if (outsideControls.GetPlayerController(playerIndex).HorizontalMassShift > 0)
         {
             var tmp_cs22 = CoM.localPosition;
-            tmp_cs22.x = outsideControls.HorizontalMassShift / 40;
+            tmp_cs22.x = outsideControls.GetPlayerController(playerIndex).HorizontalMassShift / 40;
             CoM.localPosition = tmp_cs22;//40 to get 0.025m at final
 
             GetComponent<Rigidbody>().centerOfMass = new Vector3(CoM.localPosition.x, CoM.localPosition.y, CoM.localPosition.z);
@@ -515,7 +524,7 @@ public class bicycle_code : MonoBehaviour
 
 
         //auto back CoM when any key not pressed
-        if (!crashed && outsideControls.Vertical == 0 && !outsideControls.rearBrakeOn && !linkToStunt.stuntIsOn || (outsideControls.Vertical < 0 && isFrontWheelInAir))
+        if (!crashed && outsideControls.GetPlayerController(playerIndex).Vertical == 0 && !outsideControls.GetPlayerController(playerIndex).rearBrakeOn && !linkToStunt.stuntIsOn || (outsideControls.GetPlayerController(playerIndex).Vertical < 0 && isFrontWheelInAir))
         {
             var tmp_cs23 = CoM.localPosition;
             tmp_cs23.y = normalCoM;
@@ -528,7 +537,7 @@ public class bicycle_code : MonoBehaviour
             GetComponent<Rigidbody>().centerOfMass = new Vector3(CoM.localPosition.x, CoM.localPosition.y, CoM.localPosition.z);
         }
         //autoback pilot's CoM along
-        if (outsideControls.VerticalMassShift == 0 && outsideControls.Vertical >= 0 && outsideControls.Vertical <= 0.9f && !outsideControls.rearBrakeOn && !linkToStunt.stuntIsOn)
+        if (outsideControls.GetPlayerController(playerIndex).VerticalMassShift == 0 && outsideControls.GetPlayerController(playerIndex).Vertical >= 0 && outsideControls.GetPlayerController(playerIndex).Vertical <= 0.9f && !outsideControls.GetPlayerController(playerIndex).rearBrakeOn && !linkToStunt.stuntIsOn)
         {
             var tmp_cs24 = CoM.localPosition;
             tmp_cs24.z = 0.0f;
@@ -537,7 +546,7 @@ public class bicycle_code : MonoBehaviour
         }
         //autoback pilot's CoM across
 
-        if (outsideControls.HorizontalMassShift == 0 && outsideControls.Vertical <= 0 && !outsideControls.rearBrakeOn)
+        if (outsideControls.GetPlayerController(playerIndex).HorizontalMassShift == 0 && outsideControls.GetPlayerController(playerIndex).Vertical <= 0 && !outsideControls.GetPlayerController(playerIndex).rearBrakeOn)
         {
             var tmp_cs25 = CoM.localPosition;
             tmp_cs25.x = 0.0f;
@@ -546,9 +555,9 @@ public class bicycle_code : MonoBehaviour
 
         /////////////////////////////////////////////////////// RESTART KEY ///////////////////////////////////////////////////////////
         // Restart key - recreate bike few meters above current place
-        if (outsideControls.restartBike)
+        if (outsideControls.GetPlayerController(playerIndex).restartBike)
         {
-            if (outsideControls.fullRestartBike)
+            if (outsideControls.GetPlayerController(playerIndex).fullRestartBike)
             {
                 transform.position = new Vector3(0, 1, -11);
                 transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);

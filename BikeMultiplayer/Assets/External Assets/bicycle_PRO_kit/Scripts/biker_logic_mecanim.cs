@@ -62,6 +62,8 @@ public class biker_logic_mecanim : MonoBehaviour
     GameObject ctrlHub;// gameobject with script control variables 
     controlHub outsideControls;// making a link to corresponding bike's script
 
+    public int playerIndex;
+
     void Start()
     {
 
@@ -74,6 +76,7 @@ public class biker_logic_mecanim : MonoBehaviour
 
         //need to know when bike crashed to launch a ragdoll
         bikeStatusCrashed = bikeRideOn.GetComponent<bicycle_code>();
+        playerIndex = bikeStatusCrashed.playerIndex;
         myAnimator.SetLayerWeight(2, 0); //to turn off layer with reverse animation which override all other
 
     }
@@ -130,60 +133,60 @@ public class biker_logic_mecanim : MonoBehaviour
 
         //the character should play animations when player press control keys
         //horizontal movement
-        if (outsideControls.Horizontal < 0 && bikerLeanAngle > -1.0f)
+        if (outsideControls.GetPlayerController(playerIndex).Horizontal < 0 && bikerLeanAngle > -1.0f)
         {
             bikerLeanAngle = bikerLeanAngle -= 8 * Time.deltaTime;//8 - "magic number" of speed of pilot's body movement across. Just 8 - face it :)
-            if (bikerLeanAngle < outsideControls.Horizontal) bikerLeanAngle = outsideControls.Horizontal;//this string seems strange but it's necessary for mobile version
+            if (bikerLeanAngle < outsideControls.GetPlayerController(playerIndex).Horizontal) bikerLeanAngle = outsideControls.GetPlayerController(playerIndex).Horizontal;//this string seems strange but it's necessary for mobile version
             myAnimator.SetFloat("lean", bikerLeanAngle);//the character play animation "lean" for bikerLeanAngle more and more
         }
-        if (outsideControls.Horizontal > 0 && bikerLeanAngle < 1.0f)
+        if (outsideControls.GetPlayerController(playerIndex).Horizontal > 0 && bikerLeanAngle < 1.0f)
         {
             bikerLeanAngle = bikerLeanAngle += 8 * Time.deltaTime;
-            if (bikerLeanAngle > outsideControls.Horizontal) bikerLeanAngle = outsideControls.Horizontal;
+            if (bikerLeanAngle > outsideControls.GetPlayerController(playerIndex).Horizontal) bikerLeanAngle = outsideControls.GetPlayerController(playerIndex).Horizontal;
             myAnimator.SetFloat("lean", bikerLeanAngle);
         }
         //vertical movement
-        if (outsideControls.Vertical > 0 && bikerMoveAlong < 1.0f)
+        if (outsideControls.GetPlayerController(playerIndex).Vertical > 0 && bikerMoveAlong < 1.0f)
         {
             bikerMoveAlong = bikerMoveAlong += 3 * Time.deltaTime;
-            if (bikerMoveAlong > outsideControls.Vertical) bikerMoveAlong = outsideControls.Vertical;
+            if (bikerMoveAlong > outsideControls.GetPlayerController(playerIndex).Vertical) bikerMoveAlong = outsideControls.GetPlayerController(playerIndex).Vertical;
             myAnimator.SetFloat("moveAlong", bikerMoveAlong);
         }
-        if (outsideControls.Vertical < 0 && bikerMoveAlong > -1.0f)
+        if (outsideControls.GetPlayerController(playerIndex).Vertical < 0 && bikerMoveAlong > -1.0f)
         {
             bikerMoveAlong = bikerMoveAlong -= 3 * Time.deltaTime;
-            if (bikerMoveAlong < outsideControls.Vertical) bikerMoveAlong = outsideControls.Vertical;
+            if (bikerMoveAlong < outsideControls.GetPlayerController(playerIndex).Vertical) bikerMoveAlong = outsideControls.GetPlayerController(playerIndex).Vertical;
             myAnimator.SetFloat("moveAlong", bikerMoveAlong);
         }
 
         //pilot's mass tranform movement
-        if (outsideControls.HorizontalMassShift < 0 && bikerLeanAngle > -1.0f)
+        if (outsideControls.GetPlayerController(playerIndex).HorizontalMassShift < 0 && bikerLeanAngle > -1.0f)
         {
             bikerLeanAngle = bikerLeanAngle -= 6 * Time.deltaTime;
-            if (bikerLeanAngle < outsideControls.HorizontalMassShift) bikerLeanAngle = outsideControls.HorizontalMassShift;
+            if (bikerLeanAngle < outsideControls.GetPlayerController(playerIndex).HorizontalMassShift) bikerLeanAngle = outsideControls.GetPlayerController(playerIndex).HorizontalMassShift;
             myAnimator.SetFloat("lean", bikerLeanAngle);
         }
-        if (outsideControls.HorizontalMassShift > 0 && bikerLeanAngle < 1.0f)
+        if (outsideControls.GetPlayerController(playerIndex).HorizontalMassShift > 0 && bikerLeanAngle < 1.0f)
         {
             bikerLeanAngle = bikerLeanAngle += 6 * Time.deltaTime;
-            if (bikerLeanAngle > outsideControls.HorizontalMassShift) bikerLeanAngle = outsideControls.HorizontalMassShift;
+            if (bikerLeanAngle > outsideControls.GetPlayerController(playerIndex).HorizontalMassShift) bikerLeanAngle = outsideControls.GetPlayerController(playerIndex).HorizontalMassShift;
             myAnimator.SetFloat("lean", bikerLeanAngle);
         }
-        if (outsideControls.VerticalMassShift > 0 && bikerMoveAlong < 1.0f)
+        if (outsideControls.GetPlayerController(playerIndex).VerticalMassShift > 0 && bikerMoveAlong < 1.0f)
         {
             bikerMoveAlong = bikerMoveAlong += 3 * Time.deltaTime;
-            if (bikerLeanAngle > outsideControls.VerticalMassShift) bikerLeanAngle = outsideControls.VerticalMassShift;
+            if (bikerLeanAngle > outsideControls.GetPlayerController(playerIndex).VerticalMassShift) bikerLeanAngle = outsideControls.GetPlayerController(playerIndex).VerticalMassShift;
             myAnimator.SetFloat("moveAlong", bikerMoveAlong);
         }
-        if (outsideControls.VerticalMassShift < 0 && bikerMoveAlong > -1.0f)
+        if (outsideControls.GetPlayerController(playerIndex).VerticalMassShift < 0 && bikerMoveAlong > -1.0f)
         {
             bikerMoveAlong = bikerMoveAlong -= 3 * Time.deltaTime;
-            if (bikerLeanAngle < outsideControls.VerticalMassShift) bikerLeanAngle = outsideControls.VerticalMassShift;
+            if (bikerLeanAngle < outsideControls.GetPlayerController(playerIndex).VerticalMassShift) bikerLeanAngle = outsideControls.GetPlayerController(playerIndex).VerticalMassShift;
             myAnimator.SetFloat("moveAlong", bikerMoveAlong);
         }
 
         //in a case of restart
-        if (outsideControls.restartBike)
+        if (outsideControls.GetPlayerController(playerIndex).restartBike)
         {
             //delete ragdoll when restarting scene
             GameObject RGtoDestroy = GameObject.Find("char_ragDoll(Clone)");
@@ -281,7 +284,7 @@ public class biker_logic_mecanim : MonoBehaviour
 
     void bikerComeback()
     {
-        if (outsideControls.Horizontal == 0 && outsideControls.HorizontalMassShift == 0)
+        if (outsideControls.GetPlayerController(playerIndex).Horizontal == 0 && outsideControls.GetPlayerController(playerIndex).HorizontalMassShift == 0)
         {
             if (bikerLeanAngle > 0)
             {
@@ -294,7 +297,7 @@ public class biker_logic_mecanim : MonoBehaviour
                 myAnimator.SetFloat("lean", bikerLeanAngle);
             }
         }
-        if (outsideControls.Vertical == 0 && outsideControls.VerticalMassShift == 0)
+        if (outsideControls.GetPlayerController(playerIndex).Vertical == 0 && outsideControls.GetPlayerController(playerIndex).VerticalMassShift == 0)
         {
             if (bikerMoveAlong > 0)
             {

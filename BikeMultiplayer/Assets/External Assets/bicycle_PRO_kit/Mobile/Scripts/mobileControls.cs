@@ -39,7 +39,7 @@ public class mobileControls : MonoBehaviour, IDragHandler, IPointerUpHandler, IP
 	//Uncomment it if you want to lean by device rotation :)
 	//from here---------------------------------------------------
 	//private void Update(){
-	//	outsideControls.Horizontal = Input.acceleration.x*1.25f;
+	//	outsideControls.player_1.Horizontal = Input.acceleration.x*1.25f;
 	//}
 	//to here---------------------------------------------------
 	//don't forget to comment standard leaning style few strings below
@@ -59,10 +59,10 @@ public class mobileControls : MonoBehaviour, IDragHandler, IPointerUpHandler, IP
 				joystickImg.rectTransform.anchoredPosition =
 					new Vector3 (inputVector.x * (bgImgJoyRight.rectTransform.sizeDelta.x / 2), inputVector.z * (bgImgJoyRight.rectTransform.sizeDelta.y / 2));
 			
-				outsideControls.Vertical = inputVector.z;
+				outsideControls.player_1.Vertical = inputVector.z;
 				//Comment it if you want to lean by device rotation :)
 				//from here---------------------------------------------------
-				outsideControls.Horizontal = inputVector.x;
+				outsideControls.player_1.Horizontal = inputVector.x;
 				//to here---------------------------------------------------
 				//don't forget to uncomment rotate leaning style few strings above
 			}
@@ -81,8 +81,8 @@ public class mobileControls : MonoBehaviour, IDragHandler, IPointerUpHandler, IP
 				joystickImgLeft.rectTransform.anchoredPosition =
 					new Vector3(inputVectorLeft.x * (bgImgJoyLeft.rectTransform.sizeDelta.x/2) ,inputVectorLeft.z * (bgImgJoyLeft.rectTransform.sizeDelta.y/2));
 
-				outsideControls.VerticalMassShift = inputVectorLeft.z;
-				outsideControls.HorizontalMassShift = inputVectorLeft.x;
+				outsideControls.player_1.VerticalMassShift = inputVectorLeft.z;
+				outsideControls.player_1.HorizontalMassShift = inputVectorLeft.x;
 			}
 		}
 	}
@@ -91,17 +91,17 @@ public class mobileControls : MonoBehaviour, IDragHandler, IPointerUpHandler, IP
 	public virtual void OnPointerDown(PointerEventData ped){
 
 		if (ped.pointerEnter.name == "Stick") OnDrag(ped);
-		if (ped.pointerEnter.name == "Button_X") outsideControls.rearBrakeOn = true;
-		if (ped.pointerEnter.name == "Button_R") outsideControls.restartBike = true;
-		if (ped.pointerEnter.name == "Button_Rf") outsideControls.fullRestartBike = true;
+		if (ped.pointerEnter.name == "Button_X") outsideControls.player_1.rearBrakeOn = true;
+		if (ped.pointerEnter.name == "Button_R") outsideControls.player_1.restartBike = true;
+		if (ped.pointerEnter.name == "Button_Rf") outsideControls.player_1.fullRestartBike = true;
 		//if (ped.pointerEnter.name == "Button_E") {//we need to switch ESP on and off after each press on the ESP key
-		//	if(!outsideControls.ESPMode){
-		//		outsideControls.ESPMode = true;
+		//	if(!outsideControls.player_1.ESPMode){
+		//		outsideControls.player_1.ESPMode = true;
 		//	} else {
-		//		outsideControls.ESPMode = false;
+		//		outsideControls.player_1.ESPMode = false;
 		//	}
 		//}
-		if (ped.pointerEnter.name == "Button_rev") outsideControls.reverse = true;
+		if (ped.pointerEnter.name == "Button_rev") outsideControls.player_1.reverse = true;
 
 	}
 
@@ -113,16 +113,16 @@ public class mobileControls : MonoBehaviour, IDragHandler, IPointerUpHandler, IP
 		joystickImg.rectTransform.anchoredPosition = Vector3.zero;
 		inputVectorLeft = Vector3.zero;
 		joystickImgLeft.rectTransform.anchoredPosition = Vector3.zero;
-		outsideControls.rearBrakeOn = false;
-		outsideControls.restartBike = false;
-		outsideControls.fullRestartBike = false;
-		outsideControls.reverse = false;
+		outsideControls.player_1.rearBrakeOn = false;
+		outsideControls.player_1.restartBike = false;
+		outsideControls.player_1.fullRestartBike = false;
+		outsideControls.player_1.reverse = false;
 
-		outsideControls.Vertical = 0;
-		outsideControls.Horizontal = 0;
+		outsideControls.player_1.Vertical = 0;
+		outsideControls.player_1.Horizontal = 0;
 
-		outsideControls.VerticalMassShift = 0;
-		outsideControls.HorizontalMassShift = 0;
+		outsideControls.player_1.VerticalMassShift = 0;
+		outsideControls.player_1.HorizontalMassShift = 0;
 	}
 }
 
