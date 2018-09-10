@@ -156,7 +156,7 @@ public class bicycle_code : MonoBehaviour
 
         pedals = GameObject.Find("bicycle_pedals");
         linkToStunt = pedals.GetComponent<pedalControls>();
-        linkToStunt.playerIndex = playerIndex;
+        //linkToStunt.playerIndex = playerIndex;
 
         Vector3 setInitialTensor = GetComponent<Rigidbody>().inertiaTensor;//this string is necessary for Unity 5.3f with new PhysX feature when Tensor decoupled from center of mass
         GetComponent<Rigidbody>().centerOfMass = new Vector3(CoM.localPosition.x, CoM.localPosition.y, CoM.localPosition.z);// now Center of Mass(CoM) is alligned to GameObject "CoM"
@@ -194,7 +194,7 @@ public class bicycle_code : MonoBehaviour
     }
     void FixedUpdate()
     {
-
+       
         ApplyLocalPositionToVisuals(coll_frontWheel);
         ApplyLocalPositionToVisuals(coll_rearWheel);
 
