@@ -1,0 +1,142 @@
+fileFormatVersion: 2
+guid: 3efe7efd5d428da4b92571042555fe57
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Horizontal_Poles
+    100002: Legs
+    100004: Light_Bulbs
+    100006: Light_Casings
+    100008: Light_Joins
+    100010: //RootNode
+    400000: Horizontal_Poles
+    400002: Legs
+    400004: Light_Bulbs
+    400006: Light_Casings
+    400008: Light_Joins
+    400010: //RootNode
+    2300000: Horizontal_Poles
+    2300002: Legs
+    2300004: Light_Bulbs
+    2300006: Light_Casings
+    2300008: Light_Joins
+    3300000: Horizontal_Poles
+    3300002: Legs
+    3300004: Light_Bulbs
+    3300006: Light_Casings
+    3300008: Light_Joins
+    4300000: Light_Casings
+    4300002: Light_Bulbs
+    4300004: Light_Joins
+    4300006: Horizontal_Poles
+    4300008: Legs
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StartingLights_Amber_mtl
+    second: {fileID: 2100000, guid: fea408c1bc4331142bf486d3f5d06711, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StartingLights_Frame_mtl
+    second: {fileID: 2100000, guid: 2b2af172ec803164bbe54216a2eeb832, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StartingLights_Green_mtl
+    second: {fileID: 2100000, guid: 2b972c8b882bf694fbe68c1da260a579, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StartingLights_Metal_mtl
+    second: {fileID: 2100000, guid: c5631ac2a23d2904f9fbef29bd7a2a88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StartingLights_Red_mtl
+    second: {fileID: 2100000, guid: 9beed53c17f044947865cd0557c40bc8, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
