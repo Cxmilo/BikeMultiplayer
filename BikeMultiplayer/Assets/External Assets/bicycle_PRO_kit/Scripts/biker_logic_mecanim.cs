@@ -210,13 +210,16 @@ public class biker_logic_mecanim : MonoBehaviour
             }
         }
 
-        //scan do rider see POI
-        if (poi01.gameObject.activeSelf && distanceToPoi > Vector3.Distance(this.transform.position, poi01.transform.position))
+        if (poi01)
         {
-            lookPoint = poi01;
-            //if not - still looking forward for a rigidbody POI right before bike
+            //scan do rider see POI
+            if (poi01.gameObject.activeSelf && distanceToPoi > Vector3.Distance(this.transform.position, poi01.transform.position))
+            {
+                lookPoint = poi01;
+                //if not - still looking forward for a rigidbody POI right before bike
+            }
+            else lookPoint = camPoint; 
         }
-        else lookPoint = camPoint;
 
 
         // pull leg(s) down when bike stopped

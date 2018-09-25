@@ -1,0 +1,1886 @@
+fileFormatVersion: 2
+guid: 7aea0479209624d418d8d3e922026c9e
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Chest
+    100004: Head
+    100006: Hips
+    100008: lArm
+    100010: lFinger
+    100012: lFoot
+    100014: lForearm
+    100016: lHand
+    100018: lLeg
+    100020: locator19
+    100022: lShoulder
+    100024: lToe
+    100026: lUpperLeg
+    100028: Neck
+    100030: pCube24
+    100032: pCube25
+    100034: pCube26
+    100036: pCube27
+    100038: pCube28
+    100040: pCube32
+    100042: pCube33
+    100044: pCube38
+    100046: pCube40
+    100048: pCube41
+    100050: pCube42
+    100052: pCube43
+    100054: pCube44
+    100056: pCube45
+    100058: pCube46
+    100060: rArm
+    100062: rFinger
+    100064: rFoot
+    100066: rForearm
+    100068: rHand
+    100070: rLeg
+    100072: root
+    100074: rShoulder
+    100076: rToe
+    100078: rUpperLeg
+    100080: Spine
+    100082: joint1
+    100084: bipedo_base_Hombre
+    100086: pCube29
+    100088: pCube30
+    100090: pCube31
+    100092: pCube34
+    100094: pCube35
+    100096: pCube36
+    100098: pCube37
+    100100: pCube39
+    100102: pCube47
+    100104: pCube48
+    100106: pCube49
+    100108: pCube50
+    100110: pCube51
+    100112: pCube52
+    100114: pCube53
+    100116: root 1
+    400000: //RootNode
+    400002: Chest
+    400004: Head
+    400006: Hips
+    400008: lArm
+    400010: lFinger
+    400012: lFoot
+    400014: lForearm
+    400016: lHand
+    400018: lLeg
+    400020: locator19
+    400022: lShoulder
+    400024: lToe
+    400026: lUpperLeg
+    400028: Neck
+    400030: pCube24
+    400032: pCube25
+    400034: pCube26
+    400036: pCube27
+    400038: pCube28
+    400040: pCube32
+    400042: pCube33
+    400044: pCube38
+    400046: pCube40
+    400048: pCube41
+    400050: pCube42
+    400052: pCube43
+    400054: pCube44
+    400056: pCube45
+    400058: pCube46
+    400060: rArm
+    400062: rFinger
+    400064: rFoot
+    400066: rForearm
+    400068: rHand
+    400070: rLeg
+    400072: root
+    400074: rShoulder
+    400076: rToe
+    400078: rUpperLeg
+    400080: Spine
+    400082: joint1
+    400084: bipedo_base_Hombre
+    400086: pCube29
+    400088: pCube30
+    400090: pCube31
+    400092: pCube34
+    400094: pCube35
+    400096: pCube36
+    400098: pCube37
+    400100: pCube39
+    400102: pCube47
+    400104: pCube48
+    400106: pCube49
+    400108: pCube50
+    400110: pCube51
+    400112: pCube52
+    400114: pCube53
+    400116: root 1
+    2300000: pCube24
+    2300002: pCube25
+    2300004: pCube26
+    2300006: pCube27
+    2300008: pCube28
+    2300010: pCube32
+    2300012: pCube33
+    2300014: pCube38
+    2300016: pCube40
+    2300018: pCube41
+    2300020: pCube42
+    2300022: pCube43
+    2300024: pCube44
+    2300026: pCube45
+    2300028: pCube46
+    2300030: pCube29
+    2300032: pCube30
+    2300034: pCube31
+    2300036: pCube34
+    2300038: pCube35
+    2300040: pCube36
+    2300042: pCube37
+    2300044: pCube39
+    2300046: pCube47
+    2300048: pCube48
+    2300050: pCube49
+    2300052: pCube50
+    2300054: pCube51
+    2300056: pCube52
+    2300058: pCube53
+    3300000: pCube24
+    3300002: pCube25
+    3300004: pCube26
+    3300006: pCube27
+    3300008: pCube28
+    3300010: pCube32
+    3300012: pCube33
+    3300014: pCube38
+    3300016: pCube40
+    3300018: pCube41
+    3300020: pCube42
+    3300022: pCube43
+    3300024: pCube44
+    3300026: pCube45
+    3300028: pCube46
+    3300030: pCube29
+    3300032: pCube30
+    3300034: pCube31
+    3300036: pCube34
+    3300038: pCube35
+    3300040: pCube36
+    3300042: pCube37
+    3300044: pCube39
+    3300046: pCube47
+    3300048: pCube48
+    3300050: pCube49
+    3300052: pCube50
+    3300054: pCube51
+    3300056: pCube52
+    3300058: pCube53
+    4300000: pCube25
+    4300002: pCube46
+    4300004: pCube33
+    4300006: pCube32
+    4300008: pCube45
+    4300010: pCube40
+    4300012: pCube41
+    4300014: pCube24
+    4300016: pCube38
+    4300018: pCube28
+    4300020: pCube27
+    4300022: pCube26
+    4300024: pCube44
+    4300026: pCube43
+    4300028: pCube42
+    4300030: pCube30
+    4300032: pCube47
+    4300034: pCube35
+    4300036: pCube34
+    4300038: pCube50
+    4300040: pCube49
+    4300042: pCube48
+    4300044: pCube29
+    4300046: pCube39
+    4300048: pCube37
+    4300050: pCube36
+    4300052: pCube31
+    4300054: pCube53
+    4300056: pCube52
+    4300058: pCube51
+    4300060: bipedo_base_Hombre
+    7400000: Idle
+    7400002: RightLean
+    7400004: LeftLean
+    7400006: movingAlong
+    7400008: moveForw
+    7400010: moveBack
+    7400012: backFlip360
+    7400014: rightFlip180
+    7400016: bunnyHop
+    7400018: kickRight
+    7400020: kickLeft
+    7400022: legOff
+    7400024: reverse
+    9500000: //RootNode
+    13700000: bipedo_base_Hombre
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Biker1
+    second: {fileID: 2100000, guid: 068e3fd05205b7142aa0263f9108fce0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Biker2
+    second: {fileID: 2100000, guid: 815e13dd1893b684ab9f9a99745fa54c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Casco
+    second: {fileID: 2100000, guid: 4680e302f5c081d49ac0376b36553397, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: a87f764033749f2459f114ab1d510b35, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: root
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: joint1
+        weight: 1
+      - path: joint1/Hips
+        weight: 1
+      - path: joint1/Hips/lUpperLeg
+        weight: 1
+      - path: joint1/Hips/lUpperLeg/lLeg
+        weight: 1
+      - path: joint1/Hips/lUpperLeg/lLeg/lFoot
+        weight: 1
+      - path: joint1/Hips/lUpperLeg/lLeg/lFoot/lToe
+        weight: 1
+      - path: joint1/Hips/lUpperLeg/lLeg/lFoot/pCube28
+        weight: 1
+      - path: joint1/Hips/lUpperLeg/lLeg/pCube27
+        weight: 1
+      - path: joint1/Hips/lUpperLeg/pCube26
+        weight: 1
+      - path: joint1/Hips/rUpperLeg
+        weight: 1
+      - path: joint1/Hips/rUpperLeg/pCube42
+        weight: 1
+      - path: joint1/Hips/rUpperLeg/rLeg
+        weight: 1
+      - path: joint1/Hips/rUpperLeg/rLeg/pCube43
+        weight: 1
+      - path: joint1/Hips/rUpperLeg/rLeg/rFoot
+        weight: 1
+      - path: joint1/Hips/rUpperLeg/rLeg/rFoot/pCube44
+        weight: 1
+      - path: joint1/Hips/rUpperLeg/rLeg/rFoot/rToe
+        weight: 1
+      - path: joint1/Hips/Spine
+        weight: 1
+      - path: joint1/Hips/Spine/Chest
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/lShoulder
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/lShoulder/lArm
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/lShoulder/lArm/lForearm
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/lFinger
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/pCube46
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/lShoulder/lArm/lForearm/pCube33
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/lShoulder/lArm/pCube32
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/Neck/Head/pCube25
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/pCube24
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/rShoulder
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/rShoulder/rArm
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/rShoulder/rArm/pCube41
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/rShoulder/rArm/rForearm
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/rShoulder/rArm/rForearm/pCube40
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/pCube45
+        weight: 1
+      - path: joint1/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/rFinger
+        weight: 1
+      - path: joint1/Hips/Spine/pCube38
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: RightLean
+      takeName: Take 001
+      firstFrame: 30
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: locator19
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/Hips
+        weight: 1
+      - path: root/Hips/lUpperLeg
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot/lToe
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot/pCube28
+        weight: 0
+      - path: root/Hips/lUpperLeg/lLeg/pCube27
+        weight: 0
+      - path: root/Hips/lUpperLeg/pCube26
+        weight: 0
+      - path: root/Hips/rUpperLeg
+        weight: 1
+      - path: root/Hips/rUpperLeg/pCube42
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/pCube43
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg/rFoot
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/rFoot/pCube44
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg/rFoot/rToe
+        weight: 1
+      - path: root/Hips/Spine
+        weight: 1
+      - path: root/Hips/Spine/Chest
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/lFinger
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/pCube46
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/pCube33
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/pCube32
+        weight: 0
+      - path: root/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck/Head/pCube25
+        weight: 0
+      - path: root/Hips/Spine/Chest/pCube24
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/pCube41
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/pCube40
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/pCube45
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/rFinger
+        weight: 0
+      - path: root/Hips/Spine/pCube38
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: LeftLean
+      takeName: Take 001
+      firstFrame: 50
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: locator19
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/Hips
+        weight: 1
+      - path: root/Hips/lUpperLeg
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot/lToe
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot/pCube28
+        weight: 0
+      - path: root/Hips/lUpperLeg/lLeg/pCube27
+        weight: 0
+      - path: root/Hips/lUpperLeg/pCube26
+        weight: 0
+      - path: root/Hips/rUpperLeg
+        weight: 1
+      - path: root/Hips/rUpperLeg/pCube42
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/pCube43
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg/rFoot
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/rFoot/pCube44
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg/rFoot/rToe
+        weight: 1
+      - path: root/Hips/Spine
+        weight: 1
+      - path: root/Hips/Spine/Chest
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/lFinger
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/pCube46
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/pCube33
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/pCube32
+        weight: 0
+      - path: root/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck/Head/pCube25
+        weight: 0
+      - path: root/Hips/Spine/Chest/pCube24
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/pCube41
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/pCube40
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/pCube45
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/rFinger
+        weight: 0
+      - path: root/Hips/Spine/pCube38
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: moveForw
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 84
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: locator19
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/Hips
+        weight: 1
+      - path: root/Hips/lUpperLeg
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot/lToe
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot/pCube28
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/pCube27
+        weight: 1
+      - path: root/Hips/lUpperLeg/pCube26
+        weight: 1
+      - path: root/Hips/rUpperLeg
+        weight: 1
+      - path: root/Hips/rUpperLeg/pCube42
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/pCube43
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/rFoot
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/rFoot/pCube44
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/rFoot/rToe
+        weight: 1
+      - path: root/Hips/Spine
+        weight: 1
+      - path: root/Hips/Spine/Chest
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/lFinger
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/pCube46
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/pCube33
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/pCube32
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck/Head/pCube25
+        weight: 1
+      - path: root/Hips/Spine/Chest/pCube24
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/pCube41
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/pCube40
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/pCube45
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/rFinger
+        weight: 1
+      - path: root/Hips/Spine/pCube38
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: moveBack
+      takeName: Take 001
+      firstFrame: 85
+      lastFrame: 99
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: locator19
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/Hips
+        weight: 1
+      - path: root/Hips/lUpperLeg
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot/lToe
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot/pCube28
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/pCube27
+        weight: 1
+      - path: root/Hips/lUpperLeg/pCube26
+        weight: 1
+      - path: root/Hips/rUpperLeg
+        weight: 1
+      - path: root/Hips/rUpperLeg/pCube42
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/pCube43
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/rFoot
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/rFoot/pCube44
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/rFoot/rToe
+        weight: 1
+      - path: root/Hips/Spine
+        weight: 1
+      - path: root/Hips/Spine/Chest
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/lFinger
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/pCube46
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/pCube33
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/pCube32
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck/Head/pCube25
+        weight: 1
+      - path: root/Hips/Spine/Chest/pCube24
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/pCube41
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/pCube40
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/pCube45
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/rFinger
+        weight: 1
+      - path: root/Hips/Spine/pCube38
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: backFlip360
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 130
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: locator19
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/Hips
+        weight: 1
+      - path: root/Hips/lUpperLeg
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot/lToe
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot/pCube28
+        weight: 0
+      - path: root/Hips/lUpperLeg/lLeg/pCube27
+        weight: 0
+      - path: root/Hips/lUpperLeg/pCube26
+        weight: 0
+      - path: root/Hips/rUpperLeg
+        weight: 1
+      - path: root/Hips/rUpperLeg/pCube42
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/pCube43
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg/rFoot
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/rFoot/pCube44
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg/rFoot/rToe
+        weight: 1
+      - path: root/Hips/Spine
+        weight: 1
+      - path: root/Hips/Spine/Chest
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/lFinger
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/pCube46
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/pCube33
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/pCube32
+        weight: 0
+      - path: root/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck/Head/pCube25
+        weight: 0
+      - path: root/Hips/Spine/Chest/pCube24
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/pCube41
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/pCube40
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/pCube45
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/rFinger
+        weight: 0
+      - path: root/Hips/Spine/pCube38
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: rightFlip180
+      takeName: Take 001
+      firstFrame: 130
+      lastFrame: 160
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: locator19
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/Hips
+        weight: 1
+      - path: root/Hips/lUpperLeg
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot/lToe
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot/pCube28
+        weight: 0
+      - path: root/Hips/lUpperLeg/lLeg/pCube27
+        weight: 0
+      - path: root/Hips/lUpperLeg/pCube26
+        weight: 0
+      - path: root/Hips/rUpperLeg
+        weight: 1
+      - path: root/Hips/rUpperLeg/pCube42
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/pCube43
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg/rFoot
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/rFoot/pCube44
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg/rFoot/rToe
+        weight: 1
+      - path: root/Hips/Spine
+        weight: 1
+      - path: root/Hips/Spine/Chest
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/lFinger
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/pCube46
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/pCube33
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/pCube32
+        weight: 0
+      - path: root/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck/Head/pCube25
+        weight: 0
+      - path: root/Hips/Spine/Chest/pCube24
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/pCube41
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/pCube40
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/pCube45
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/rFinger
+        weight: 0
+      - path: root/Hips/Spine/pCube38
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: bunnyHop
+      takeName: Take 001
+      firstFrame: 160
+      lastFrame: 190
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: locator19
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/Hips
+        weight: 1
+      - path: root/Hips/lUpperLeg
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot/lToe
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot/pCube28
+        weight: 0
+      - path: root/Hips/lUpperLeg/lLeg/pCube27
+        weight: 0
+      - path: root/Hips/lUpperLeg/pCube26
+        weight: 0
+      - path: root/Hips/rUpperLeg
+        weight: 1
+      - path: root/Hips/rUpperLeg/pCube42
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/pCube43
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg/rFoot
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/rFoot/pCube44
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg/rFoot/rToe
+        weight: 1
+      - path: root/Hips/Spine
+        weight: 1
+      - path: root/Hips/Spine/Chest
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/lFinger
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/pCube46
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/pCube33
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/pCube32
+        weight: 0
+      - path: root/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck/Head/pCube25
+        weight: 0
+      - path: root/Hips/Spine/Chest/pCube24
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/pCube41
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/pCube40
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/pCube45
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/rFinger
+        weight: 0
+      - path: root/Hips/Spine/pCube38
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: legOff
+      takeName: Take 001
+      firstFrame: 251
+      lastFrame: 252
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: locator19
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/Hips
+        weight: 1
+      - path: root/Hips/lUpperLeg
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot/lToe
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot/pCube28
+        weight: 0
+      - path: root/Hips/lUpperLeg/lLeg/pCube27
+        weight: 0
+      - path: root/Hips/lUpperLeg/pCube26
+        weight: 0
+      - path: root/Hips/rUpperLeg
+        weight: 1
+      - path: root/Hips/rUpperLeg/pCube42
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/pCube43
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg/rFoot
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/rFoot/pCube44
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg/rFoot/rToe
+        weight: 1
+      - path: root/Hips/Spine
+        weight: 1
+      - path: root/Hips/Spine/Chest
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/lFinger
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/pCube46
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/pCube33
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/pCube32
+        weight: 0
+      - path: root/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck/Head/pCube25
+        weight: 0
+      - path: root/Hips/Spine/Chest/pCube24
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/pCube41
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/pCube40
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/pCube45
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/rFinger
+        weight: 0
+      - path: root/Hips/Spine/pCube38
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: reverse
+      takeName: Take 001
+      firstFrame: 255
+      lastFrame: 275
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: locator19
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/Hips
+        weight: 1
+      - path: root/Hips/lUpperLeg
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot/lToe
+        weight: 1
+      - path: root/Hips/lUpperLeg/lLeg/lFoot/pCube28
+        weight: 0
+      - path: root/Hips/lUpperLeg/lLeg/pCube27
+        weight: 0
+      - path: root/Hips/lUpperLeg/pCube26
+        weight: 0
+      - path: root/Hips/rUpperLeg
+        weight: 1
+      - path: root/Hips/rUpperLeg/pCube42
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/pCube43
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg/rFoot
+        weight: 1
+      - path: root/Hips/rUpperLeg/rLeg/rFoot/pCube44
+        weight: 0
+      - path: root/Hips/rUpperLeg/rLeg/rFoot/rToe
+        weight: 1
+      - path: root/Hips/Spine
+        weight: 1
+      - path: root/Hips/Spine/Chest
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand
+        weight: 1
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/lFinger
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/lHand/pCube46
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/lForearm/pCube33
+        weight: 0
+      - path: root/Hips/Spine/Chest/lShoulder/lArm/pCube32
+        weight: 0
+      - path: root/Hips/Spine/Chest/Neck
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: root/Hips/Spine/Chest/Neck/Head/pCube25
+        weight: 0
+      - path: root/Hips/Spine/Chest/pCube24
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/pCube41
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/pCube40
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand
+        weight: 1
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/pCube45
+        weight: 0
+      - path: root/Hips/Spine/Chest/rShoulder/rArm/rForearm/rHand/rFinger
+        weight: 0
+      - path: root/Hips/Spine/pCube38
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lUpperLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rUpperLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Chest
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lForearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rForearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lToe
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: rToe
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: char_anim(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bipedo_base_Hombre
+      parentName: char_anim(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: locator19
+      parentName: char_anim(Clone)
+      position: {x: 0.0046763644, y: 0.92837363, z: -0.10979077}
+      rotation: {x: 0.21316145, y: 0.21180002, z: -0.67836136, w: 0.6704691}
+      scale: {x: 25.408503, y: 25.408503, z: 25.408503}
+    - name: root
+      parentName: char_anim(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hips
+      parentName: root
+      position: {x: 0.0046763644, y: 0.92837363, z: -0.10979077}
+      rotation: {x: -0.000000016495772, y: -0.00000001643146, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1.0000005, y: 1.0000005, z: 0.9999999}
+    - name: Spine
+      parentName: Hips
+      position: {x: -0.10328232, y: 2.2933281e-17, z: -0.06322644}
+      rotation: {x: -0, y: -0, z: -2.710496e-16, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999998}
+    - name: pCube38
+      parentName: Spine
+      position: {x: 1.0295485, y: -0.13149308, z: 0.0057636965}
+      rotation: {x: -0.00020742383, y: 0.00020742383, z: 0.70710677, w: 0.70710677}
+      scale: {x: 7.002651, y: 0.37949377, z: 0.43483663}
+    - name: pCube39
+      parentName: Spine
+      position: {x: 1.0295485, y: -0.13149308, z: 0.0057636965}
+      rotation: {x: -0.00020742383, y: 0.00020742383, z: 0.70710677, w: 0.70710677}
+      scale: {x: 7.002651, y: 0.37949377, z: 0.43483663}
+    - name: Chest
+      parentName: Spine
+      position: {x: -0.1342973, y: 2.981999e-17, z: -0.012201379}
+      rotation: {x: 4.0927256e-10, y: 0.000000023283068, z: 2.6680614e-16, w: 1}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
+    - name: pCube24
+      parentName: Chest
+      position: {x: 1.1636608, y: -0.13151646, z: -0.021890797}
+      rotation: {x: 0.012114223, y: 0.012529007, z: 0.7069958, w: 0.707003}
+      scale: {x: 7.002651, y: 0.37949377, z: 0.43483663}
+    - name: pCube29
+      parentName: Chest
+      position: {x: 1.1636608, y: -0.13151646, z: -0.021890797}
+      rotation: {x: 0.012114223, y: 0.012529008, z: 0.7069958, w: 0.707003}
+      scale: {x: 7.002651, y: 0.37949377, z: 0.43483663}
+    - name: Neck
+      parentName: Chest
+      position: {x: -0.20038648, y: 4.4494737e-17, z: 0.042008493}
+      rotation: {x: -0, y: -0, z: -1.654361e-24, w: 1}
+      scale: {x: 1.0000005, y: 1.0000001, z: 1.0000001}
+    - name: Head
+      parentName: Neck
+      position: {x: -0.05741328, y: -8.011868e-34, z: -0.0039378325}
+      rotation: {x: -5.144869e-10, y: 5.1448623e-10, z: 0.7071068, w: 0.7071068}
+      scale: {x: 0.9999998, y: 0.99999964, z: 1.0000004}
+    - name: pCube25
+      parentName: Head
+      position: {x: 0.00027914075, y: 0.07878448, z: 0.013211026}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube30
+      parentName: Head
+      position: {x: 0.00019038665, y: 0.07782303, z: 0.014092727}
+      rotation: {x: -0.00018689204, y: 0.000022729266, z: 0.00000030842847, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lShoulder
+      parentName: Chest
+      position: {x: -0.116956495, y: -0.06538435, z: 0.12093891}
+      rotation: {x: -0.12952463, y: 0.06746045, z: 0.5356491, w: 0.83171666}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1.0000002}
+    - name: lArm
+      parentName: lShoulder
+      position: {x: -0.12987964, y: -0.029053122, z: -0.08138707}
+      rotation: {x: 0.10361948, y: -0.092730306, z: 0.2391214, w: 0.9609813}
+      scale: {x: 0.9999999, y: 1.0000005, z: 1.0000007}
+    - name: pCube32
+      parentName: lArm
+      position: {x: -0.06676697, y: -0.016141681, z: 0.009442863}
+      rotation: {x: -0.010702577, y: -0.036963373, z: -0.7204328, w: 0.69245636}
+      scale: {x: 1.4231017, y: 1.4231017, z: 1.4231017}
+    - name: pCube34
+      parentName: lArm
+      position: {x: -0.06676697, y: -0.016141681, z: 0.009442863}
+      rotation: {x: -0.010702577, y: -0.03696337, z: -0.7204328, w: 0.6924563}
+      scale: {x: 1.4231017, y: 1.4231017, z: 1.4231017}
+    - name: lForearm
+      parentName: lArm
+      position: {x: -0.2833757, y: -1.0981435e-16, z: -0.01663777}
+      rotation: {x: -0.000732198, y: -0.09821682, z: -0.022601405, w: 0.9949081}
+      scale: {x: 1.0000008, y: 1.0000004, z: 1.0000002}
+    - name: pCube33
+      parentName: lForearm
+      position: {x: 0.21782093, y: -0.0009601593, z: 0.014302635}
+      rotation: {x: -0.028321302, y: -0.017298013, z: -0.69527787, w: 0.71797454}
+      scale: {x: 1.4231017, y: 1.4231017, z: 1.4231017}
+    - name: pCube35
+      parentName: lForearm
+      position: {x: 0.21782093, y: -0.0009601593, z: 0.014302635}
+      rotation: {x: -0.028321302, y: -0.017298015, z: -0.69527787, w: 0.71797454}
+      scale: {x: 1.4231017, y: 1.4231017, z: 1.4231017}
+    - name: lHand
+      parentName: lForearm
+      position: {x: -0.26539275, y: 3.3412803e-17, z: 0.054041658}
+      rotation: {x: 0.011301705, y: 0.00006545224, z: 0.031704403, w: 0.9994334}
+      scale: {x: 1.0000004, y: 1, z: 1.0000001}
+    - name: pCube46
+      parentName: lHand
+      position: {x: -0.29521096, y: -1.0587313, z: -0.0058042333}
+      rotation: {x: 0.00011697564, y: 0.00026900932, z: -0.39876935, w: 0.91705126}
+      scale: {x: 1.423, y: 1.4231017, z: 1.4231017}
+    - name: pCube47
+      parentName: lHand
+      position: {x: -0.29521096, y: -1.0587313, z: -0.0058042333}
+      rotation: {x: 0.000116975636, y: 0.0002690093, z: -0.39876935, w: 0.91705126}
+      scale: {x: 1.423, y: 1.4231017, z: 1.4231017}
+    - name: lFinger
+      parentName: lHand
+      position: {x: -0.11288285, y: 2.1337005e-16, z: 0.004280694}
+      rotation: {x: 9.313226e-10, y: 0.000000027219357, z: -0.39876944, w: 0.9170513}
+      scale: {x: 1.0000002, y: 1, z: 1.0000002}
+    - name: rShoulder
+      parentName: Chest
+      position: {x: -0.116958454, y: 0.0653843, z: 0.12093889}
+      rotation: {x: 0.53563905, y: 0.8317235, z: 0.12952222, w: -0.06745924}
+      scale: {x: 0.99999964, y: 1.0000004, z: 1.0000006}
+    - name: rArm
+      parentName: rShoulder
+      position: {x: 0.12987652, y: 0.029058069, z: 0.081387095}
+      rotation: {x: 0.10356638, y: -0.09273957, z: 0.2391344, w: 0.960983}
+      scale: {x: 1.0000013, y: 1.0000011, z: 1.0000018}
+    - name: pCube41
+      parentName: rArm
+      position: {x: 0.06678795, y: 0.016115855, z: -0.0091779325}
+      rotation: {x: -0.0372828, y: 0.010429318, z: 0.6924183, w: 0.7204569}
+      scale: {x: 1.423, y: 1.4231017, z: -1.4231017}
+    - name: pCube48
+      parentName: rArm
+      position: {x: 0.06678795, y: 0.016115855, z: -0.0091779325}
+      rotation: {x: -0.037282802, y: 0.010429319, z: 0.6924183, w: 0.7204569}
+      scale: {x: 1.423, y: 1.4231017, z: -1.4231017}
+    - name: rForearm
+      parentName: rArm
+      position: {x: 0.28336984, y: -0.00000507976, z: 0.0166377}
+      rotation: {x: -0.0007332635, y: -0.09821399, z: -0.02261322, w: 0.9949081}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1.0000007}
+    - name: pCube40
+      parentName: rForearm
+      position: {x: -0.21780239, y: 0.00094169617, z: -0.014038352}
+      rotation: {x: -0.017606558, y: 0.028035095, z: 0.7179457, w: 0.6953115}
+      scale: {x: 1.423, y: 1.4231017, z: -1.4231017}
+    - name: pCube49
+      parentName: rForearm
+      position: {x: -0.21780239, y: 0.00094169617, z: -0.014038352}
+      rotation: {x: -0.017606558, y: 0.028035095, z: 0.7179457, w: 0.6953115}
+      scale: {x: 1.423, y: 1.4231017, z: -1.4231017}
+    - name: rHand
+      parentName: rForearm
+      position: {x: 0.2653955, y: 0.0000031525656, z: -0.054041628}
+      rotation: {x: 0.011351267, y: 0.00006568999, z: 0.03170096, w: 0.999433}
+      scale: {x: 1.0000005, y: 1.0000015, z: 1.0000008}
+    - name: pCube45
+      parentName: rHand
+      position: {x: -0.1013897, y: 0.68863547, z: -0.30796266}
+      rotation: {x: -0.00026902076, y: 0.00011700411, z: 0.91705126, w: 0.39876935}
+      scale: {x: 1.423, y: 1.4231017, z: -1.4231017}
+    - name: pCube50
+      parentName: rHand
+      position: {x: -0.1013897, y: 0.68863547, z: -0.30796266}
+      rotation: {x: -0.00026902073, y: 0.0001170041, z: 0.91705126, w: 0.39876935}
+      scale: {x: 1.423, y: 1.4231017, z: -1.4231017}
+    - name: rFinger
+      parentName: rHand
+      position: {x: 0.11288215, y: -0.00000027700239, z: -0.00428067}
+      rotation: {x: 0.0000000623986, y: 0.000000014108078, z: -0.39876947, w: 0.9170512}
+      scale: {x: 1.0000006, y: 1.0000005, z: 1.0000008}
+    - name: lUpperLeg
+      parentName: Hips
+      position: {x: 0.037067607, y: -0.13047276, z: -0.042092152}
+      rotation: {x: -0.00019055276, y: 0.0051475978, z: 0.9999864, w: 0.000868082}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: pCube26
+      parentName: lUpperLeg
+      position: {x: -0.34389853, y: -0.13073891, z: 0.35172135}
+      rotation: {x: -0.0004029408, y: -0.0002770885, z: -0.70648336, w: 0.70772946}
+      scale: {x: 1.4231017, y: 1.4231017, z: 1.4231017}
+    - name: pCube31
+      parentName: lUpperLeg
+      position: {x: -0.34389853, y: -0.13073891, z: 0.35172135}
+      rotation: {x: -0.0004029408, y: -0.0002770885, z: -0.70648336, w: 0.70772946}
+      scale: {x: 1.4231017, y: 1.4231017, z: 1.4231017}
+    - name: lLeg
+      parentName: lUpperLeg
+      position: {x: -0.4183721, y: -0.02466124, z: 0.05129844}
+      rotation: {x: 0.99999833, y: 0.0018587349, z: -0.000000009764334, w: 0.000000013969837}
+      scale: {x: 1, y: 1.0000007, z: 1.0000008}
+    - name: pCube27
+      parentName: lLeg
+      position: {x: 0.074078724, y: 0.1063538, z: -0.30042288}
+      rotation: {x: 0.7064152, y: 0.70779765, z: -0.00027638557, w: 0.00040340878}
+      scale: {x: 1.4231017, y: 1.4231017, z: 1.4231017}
+    - name: pCube36
+      parentName: lLeg
+      position: {x: 0.074078724, y: 0.1063538, z: -0.30042288}
+      rotation: {x: 0.7064151, y: 0.70779765, z: -0.00027633904, w: 0.0004034551}
+      scale: {x: 1.4231017, y: 1.4231017, z: 1.4231017}
+    - name: lFoot
+      parentName: lLeg
+      position: {x: -0.40323603, y: 0.004918194, z: 0.040447883}
+      rotation: {x: -0.005147929, y: 0.00018101747, z: 0.0009906288, w: 0.99998623}
+      scale: {x: 1.000001, y: 1.000001, z: 1.0000017}
+    - name: pCube28
+      parentName: lFoot
+      position: {x: 0.47745046, y: 0.100923695, z: -0.34073216}
+      rotation: {x: 0.70710677, y: 0.70710677, z: 0.00020743294, w: -0.00020743294}
+      scale: {x: 1.3374869, y: 0.99617124, z: 1.4231017}
+    - name: pCube37
+      parentName: lFoot
+      position: {x: 0.47745046, y: 0.100923695, z: -0.34073216}
+      rotation: {x: 0.70710677, y: 0.70710677, z: 0.00020743294, w: -0.00020743294}
+      scale: {x: 1.3374869, y: 0.99617124, z: 1.4231017}
+    - name: lToe
+      parentName: lFoot
+      position: {x: -0.040837217, y: -0.0028220543, z: -0.17411849}
+      rotation: {x: -0.7071068, y: -0.7071068, z: -2.3283062e-10, w: 1.45519135e-11}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.9999998}
+    - name: rUpperLeg
+      parentName: Hips
+      position: {x: 0.037067924, y: 0.130473, z: -0.042092133}
+      rotation: {x: 0.9999187, y: 0.0006319583, z: -0.0004712417, w: 0.012726678}
+      scale: {x: 0.9999999, y: 0.99999964, z: 1.0000005}
+    - name: pCube42
+      parentName: rUpperLeg
+      position: {x: 0.3433619, y: 0.14139195, z: -0.34794432}
+      rotation: {x: 0.011451057, y: -0.0103322165, z: 0.7078155, w: 0.7062289}
+      scale: {x: 1.337, y: 1.4231017, z: -1.4231017}
+    - name: pCube51
+      parentName: rUpperLeg
+      position: {x: 0.3433619, y: 0.14139195, z: -0.34794432}
+      rotation: {x: 0.011451057, y: -0.0103322165, z: 0.7078155, w: 0.7062289}
+      scale: {x: 1.337, y: 1.4231017, z: -1.4231017}
+    - name: rLeg
+      parentName: rUpperLeg
+      position: {x: 0.41837206, y: 0.02466152, z: -0.0512984}
+      rotation: {x: -0.99999833, y: -0.001858742, z: -0.000000003608875, w: 0.000000013394953}
+      scale: {x: 1, y: 1.0000008, z: 1}
+    - name: pCube43
+      parentName: rLeg
+      position: {x: -0.07457569, y: -0.11700846, z: 0.2966459}
+      rotation: {x: 0.7075434, y: -0.70650166, z: -0.010353454, w: -0.011431873}
+      scale: {x: 1.337, y: 1.4231017, z: -1.4231017}
+    - name: pCube52
+      parentName: rLeg
+      position: {x: -0.07457569, y: -0.11700846, z: 0.2966459}
+      rotation: {x: 0.7075433, y: -0.70650166, z: -0.010353489, w: -0.011431837}
+      scale: {x: 1.337, y: 1.4231017, z: -1.4231017}
+    - name: rFoot
+      parentName: rLeg
+      position: {x: 0.4032357, y: -0.0049182675, z: -0.0404479}
+      rotation: {x: 0.012727537, y: -0.00044757142, z: 0.0012266339, w: 0.9999182}
+      scale: {x: 1.000001, y: 1.0000007, z: 1.0000001}
+    - name: pCube44
+      parentName: rFoot
+      position: {x: -0.47745043, y: -0.10049442, z: 0.3407322}
+      rotation: {x: 0.70710677, y: -0.70710677, z: 0.00020743147, w: 0.00020743147}
+      scale: {x: 1.337, y: 0.99617124, z: -1.4231017}
+    - name: pCube53
+      parentName: rFoot
+      position: {x: -0.47745043, y: -0.10049442, z: 0.3407322}
+      rotation: {x: 0.70710677, y: -0.70710677, z: 0.00020743147, w: 0.00020743145}
+      scale: {x: 1.337, y: 0.99617124, z: -1.4231017}
+    - name: rToe
+      parentName: rFoot
+      position: {x: 0.040837303, y: 0.0028220036, z: 0.17411831}
+      rotation: {x: 0.70710677, y: 0.70710677, z: -0.000000019557769, w: -0.000000005093169}
+      scale: {x: 0.9999999, y: 1.0000005, z: 1.0000007}
+    - name: root 1
+      parentName: char_anim(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
